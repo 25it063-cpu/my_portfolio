@@ -260,7 +260,7 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 
   status.textContent = 'Sending...';
 
-  fetch('https://formspree.io/f/mirdhulasree78@gmail.com', {
+   fetch('https://formspree.io/f/mykqyknd' , {
     method: 'POST',
     headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
     body: JSON.stringify({ name, email, message, _subject: `Portfolio message from ${name}` })
