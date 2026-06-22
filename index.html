@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirdhula Sree D — Android & Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-orb orb-1" id="orb1"></div>
+<div class="bg-orb orb-2" id="orb2"></div>
+
+<div class="build-meter" id="buildMeter">
+  <div class="build-meter-track">
+    <div class="build-meter-fill" id="buildMeterFill"></div>
+  </div>
+  <div class="build-meter-label" id="buildMeterLabel">00%</div>
+</div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">Mirdhula<span class="logo-dot">.dev</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero wrap">
+  <div class="hero-text">
+    <div class="hero-eyebrow"><span class="status-dot"></span>turning "what if?" into projects · chapter 001</div>
+    <h1 class="hero-title">Turning ideas into<br><span class="grad-text">apps people can use.</span></h1>
+    <p class="hero-sub">Information Technology undergraduate exploring software development, problem-solving, and emerging technologies. This is my journey of turning ideas into real projects — debugging the chaos, learning through mistakes, and shipping what I build.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Explore my work</a>
+      <a href="#contact" class="btn btn-ghost">Let's connect</a>
+    </div>
+  </div>
+
+  <div class="hero-3d" id="hero3d">
+    <div class="phone-3d" id="phone3d">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen" id="phoneScreen">
+
+          <!-- Screen 1: SafeStick -->
+          <div class="app-screen app-safestick active" data-screen="0">
+            <div class="ss-bar">SafeStickApp</div>
+            <div class="ss-zone ss-voice">
+              <div class="ss-pulse-ring"></div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="ss-icon"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3"/></svg>
+              <span>TAP FOR VOICE</span>
+            </div>
+            <div class="ss-zone ss-sos">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="ss-icon"><path d="M12 9v4M12 17h.01"/><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+              <span>TAP FOR SOS</span>
+            </div>
+          </div>
+
+          <!-- Screen 2: TicTic Stopwatch -->
+          <div class="app-screen app-tictic" data-screen="1">
+            <div class="tt-topbar">TicTic</div>
+            <div class="tt-ring-wrap">
+              <svg class="tt-ring" viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" class="tt-ring-bg"/>
+                <circle cx="60" cy="60" r="52" class="tt-ring-fg" id="ttRingFg"/>
+              </svg>
+              <div class="tt-time">00:12.4<small>0</small></div>
+            </div>
+            <div class="tt-controls">
+              <button class="tt-btn tt-start">Start</button>
+              <button class="tt-btn tt-pause">Pause</button>
+            </div>
+            <button class="tt-btn tt-reset">Reset</button>
+            <div class="tt-nav">
+              <span>Clock</span><span class="tt-nav-active">Stopwatch</span><span>Timer</span>
+            </div>
+          </div>
+
+          <!-- Screen 3: Expense Tracker -->
+          <div class="app-screen app-expense" data-screen="2">
+            <div class="et-header">
+              <div class="et-label">Total Balance</div>
+              <div class="et-balance">₹46,300.00</div>
+              <div class="et-split">
+                <span class="et-income">▲ Income</span>
+                <span class="et-expense">▼ Expense</span>
+              </div>
+            </div>
+            <div class="et-list">
+              <div class="et-row">
+                <div class="et-icon et-icon-rent">🏠</div>
+                <div class="et-row-text"><span>Rent</span><small>12 Jun</small></div>
+                <div class="et-amt et-neg">-₹8,000</div>
+              </div>
+              <div class="et-row">
+                <div class="et-icon et-icon-car">🚗</div>
+                <div class="et-row-text"><span>Transport</span><small>10 Jun</small></div>
+                <div class="et-amt et-neg">-₹450</div>
+              </div>
+              <div class="et-row">
+                <div class="et-icon et-icon-pay">💼</div>
+                <div class="et-row-text"><span>Internship</span><small>5 Jun</small></div>
+                <div class="et-amt et-pos">+₹15,000</div>
+              </div>
+            </div>
+            <div class="et-fab">+</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="phone-dots" id="phoneDots">
+      <span class="phone-dot active" data-idx="0"></span>
+      <span class="phone-dot" data-idx="1"></span>
+      <span class="phone-dot" data-idx="2"></span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="wrap depth-layer">
+  <div class="section-head reveal">
+    <span class="log-tag">LOG 01</span>
+    <h2 class="section-title">About</h2>
+    <span class="status-pill status-ongoing">currently evolving</span>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm an Information Technology undergraduate who enjoys building <strong>Android apps</strong> and <strong>web experiences</strong>. I started with curiosity, and somewhere between the first "Hello World" and countless debugging sessions, development became something I genuinely enjoy.</p>
+      <p>My projects range from accessibility-focused solutions like <strong>SafeStick for visually impaired users</strong> to web apps, productivity tools, and experiments with new technologies.</p>
+      <p>For me, good software isn't just about writing code — it's about <strong>understanding people</strong>, <strong>solving practical problems</strong>, and continuously improving with every project I create.</p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Projects created</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Android &amp; Web</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Ideas brought to life</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="wrap depth-layer">
+  <div class="section-head reveal">
+    <span class="log-tag">LOG 02</span>
+    <h2 class="section-title">Projects</h2>
+    <span class="status-pill status-shipped">Featured Work</span>
+  </div>
+  <p class="section-hint reveal">Every project has a story — the idea, the process, and what I learned building it.</p>
+
+  <div class="timeline" id="timeline">
+    <div class="timeline-spine">
+      <div class="timeline-fill" id="timelineFill"></div>
+    </div>
+    <div id="timelineNodes"></div>
+  </div>
+</section>
+
+<section id="skills" class="wrap depth-layer">
+  <div class="section-head reveal">
+    <span class="log-tag">LOG 03</span>
+    <h2 class="section-title">Stack</h2>
+    <span class="status-pill status-ongoing">always learning</span>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Mobile</div>
+      <div class="skill-list">
+        <span class="skill-pill">Android</span>
+        <span class="skill-pill">Kotlin</span>
+        <span class="skill-pill">Java</span>
+        <span class="skill-pill">Bluetooth IoT</span>
+        <span class="skill-pill">Speech Recognition</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Web</div>
+      <div class="skill-list">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">Responsive Design</span>
+        <span class="skill-pill">UI/UX</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Developer Tools</div>
+      <div class="skill-list">
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">GitHub</span>
+        <span class="skill-pill">Android Studio</span>
+        <span class="skill-pill">VS Code</span>
+        <span class="skill-pill">REST APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="wrap depth-layer">
+  <div class="contact-box reveal">
+    <h2 class="contact-title">Got an idea? <span class="grad-text">Let's make it real.</span></h2>
+    <p class="contact-sub">Open to internships, collaborations, exciting projects, and opportunities to learn and grow.</p>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="justify-content:center; margin-top:6px; width:100%;">Send a message</button>
+      <div class="form-status" id="formStatus"></div>
+    </form>
+
+    <div class="social-row">
+      <a href="https://github.com/25it063-cpu" class="btn btn-ghost">GitHub</a>
+      <a href="www.linkedin.com/in/mirdhula-sree-d" class="btn btn-ghost">LinkedIn</a>
+      <a href="mailto:mirdhulasree7@gmail.com" class="btn btn-ghost">Email</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Designed, developed, and debugged by Mirdhula Sree D — © <span id="year"></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
